@@ -9,11 +9,12 @@ body #app-root nav {
 }
 
 body #app-root {
-    padding-inline-start: 12px;
+    padding-inline-start: 24px;
 }
 
 body #app-root div[role="toolbar"] {
-    display: none !important;
+    visibility: hidden;
+    height: 0;
 }
 
 body #app-root header > div:first-child {
@@ -22,20 +23,4 @@ body #app-root header > div:first-child {
 
 body #app-root header > div[role="heading"] {
     opacity: 0.3;
-}
-
-body #app-root div[role="region"]:first-child {
-    display: none;
-}
-
-div[class*="previewPane"] {
-    display: none !important;
-}
-
-body #app-root > div > div[class*="mainArea"] {
-    grid-template-columns: minmax(0, 1fr) !important;
-}
-
-body #app-root > div > div[class*="mainArea"] > div[class*="_splitter_"] {
-    grid-template-columns: 1fr 0 0 !important;
 }
