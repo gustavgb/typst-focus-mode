@@ -1,0 +1,20 @@
+{
+  "manifest_version": 3,
+  "name": "Typst Focus Mode",
+  "version": "1.0",
+  "description": "Alters the look of the Typst editor by injecting a custom stylesheet.",
+  "background": {
+    "service_worker": "background.js"
+  },
+  "permissions": ["scripting", "tabs"],
+  "host_permissions": ["https://typst.app/project/*"],
+  "commands": {
+    "toggle-focus": {
+      "suggested_key": {
+        "default": "Alt+Z",
+        "mac": "Alt+Z"
+      },
+      "description": "Toggle Focus Mode styling"
+    }
+  }
+}
